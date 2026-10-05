@@ -1,7 +1,12 @@
 {
-  // Landing site only. This is a Cloudflare Pages project.
-  // It is not the classify-junction Worker that serves the marketplace.
-  "name": "classify-junction-landing",
-  "pages_build_output_dir": "site",
-  "compatibility_date": "2026-10-01"
+  // Landing site only: static files in ./site served by Cloudflare (Workers static assets).
+  // It is not the classified-junction Worker that serves the marketplace.
+  "name": "classified-junction-landing",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true,
+  "preview_urls": false
 }

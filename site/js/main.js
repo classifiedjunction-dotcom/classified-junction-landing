@@ -43,8 +43,8 @@ const priceCaption = document.querySelector('#price-caption')
 
 if (priceRows && priceCards) {
   // Publishable key already used by the public marketplace. It can read active categories only.
-  const key = 'sb_publishable_UYJLhWpyuB-K53DNY93VIw_ITSoPHa2'
-  const endpoint = 'https://yqdskcnxvkmhtfnucbcw.supabase.co/rest/v1/categories?select=name,post_price,mobile_view_price&status=eq.active&order=sort_order.asc,name.asc'
+  const key = 'sb_publishable_W7GbzU88FOa3wKfM6DQ5kw_ODqR0lSZ'
+  const endpoint = 'https://vuksgluwgfipvyahuraw.supabase.co/rest/v1/categories?select=name,post_price,mobile_view_price&status=eq.active&order=sort_order.asc,name.asc'
   const inr = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 })
 
   const formatPrice = (amount) => {
@@ -122,9 +122,9 @@ const liveFront = document.querySelector('#live-front')
 const liveBack = document.querySelector('#live-back')
 
 if (liveFront && liveBack) {
-  const key = 'sb_publishable_UYJLhWpyuB-K53DNY93VIw_ITSoPHa2'
-  const rpcUrl = 'https://yqdskcnxvkmhtfnucbcw.supabase.co/rest/v1/rpc/'
-  const board = 'https://classify-junction.digibillmate-billing.workers.dev'
+  const key = 'sb_publishable_W7GbzU88FOa3wKfM6DQ5kw_ODqR0lSZ'
+  const rpcUrl = 'https://vuksgluwgfipvyahuraw.supabase.co/rest/v1/rpc/'
+  const board = 'https://classifiedjunction.com'
   const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
   const codeOk = /^CJ\d{1,12}$/i
   const postedOn = new Intl.DateTimeFormat('en-IN', {
