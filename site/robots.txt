@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://classified-junction-landing.classified-junction.workers.dev/sitemap.xml
+Sitemap: https://classifiedjunction.com/sitemap.xml

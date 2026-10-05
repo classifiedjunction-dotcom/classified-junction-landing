@@ -124,7 +124,7 @@ const liveBack = document.querySelector('#live-back')
 if (liveFront && liveBack) {
   const key = 'sb_publishable_W7GbzU88FOa3wKfM6DQ5kw_ODqR0lSZ'
   const rpcUrl = 'https://vuksgluwgfipvyahuraw.supabase.co/rest/v1/rpc/'
-  const board = 'https://classifiedjunction.com'
+  const board = 'https://web.classifiedjunction.com'
   const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
   const codeOk = /^CJ\d{1,12}$/i
   const postedOn = new Intl.DateTimeFormat('en-IN', {

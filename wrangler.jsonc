@@ -1,12 +1,20 @@
 {
-  // Landing site only: static files in ./site served by Cloudflare (Workers static assets).
-  // It is not the classified-junction Worker that serves the marketplace.
+  // Landing site: static files in ./site, served on classifiedjunction.com and www.
+  // worker.js only forwards old marketplace links to web. / admin. (see the comment there).
   "name": "classified-junction-landing",
+  "main": "worker.js",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./site",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*", "/admin", "/admin/*", "/ads/*", "/my", "/my/*", "/payment/*", "/post", "/contact", "/refund-policy"]
   },
+  "services": [{ "binding": "MARKET", "service": "classified-junction" }],
+  "routes": [
+    { "pattern": "classifiedjunction.com", "custom_domain": true },
+    { "pattern": "www.classifiedjunction.com", "custom_domain": true }
+  ],
   "workers_dev": true,
   "preview_urls": false
 }
