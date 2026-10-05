@@ -1,7 +1,7 @@
-// classifiedjunction.com: serves the landing page (./site). Marketplace addresses that used to
-// live on this domain keep working: /api/* (payment webhook, backups, banners) is handed to the
-// marketplace Worker, and page links move to web. / admin. subdomains.
-const WEB = 'https://web.classifiedjunction.com'
+// web.classifiedjunction.com: serves the landing page (./site). Marketplace addresses opened on
+// this domain still work: /api/* (payment webhook, backups, banners) is handed to the
+// marketplace Worker, and page links move to classifiedjunction.com / admin.
+const WEB = 'https://classifiedjunction.com'
 const ADMIN = 'https://admin.classifiedjunction.com'
 const MARKET_PAGES = ['/ads/', '/my', '/payment/', '/post', '/contact', '/refund-policy']
 

@@ -1,6 +1,6 @@
 # Classified Junction landing page
 
-Public site for [Classified Junction](https://web.classifiedjunction.com), the classifieds marketplace built by DigiBillMate.
+Public site for [Classified Junction](https://classifiedjunction.com), the classifieds marketplace built by DigiBillMate.
 
 This repository is only the landing page. It does not contain the marketplace application, and deploying it must not touch the `classified-junction` Worker.
 
